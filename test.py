@@ -1,5 +1,6 @@
-from tools.tavily_tool import tavily_search
-from tools.flight_tool import search_flights
+import asyncio
+from mcp_client_test import get_all_tools
 
-res = search_flights(" New York to Tokyo")
-print(res)
+
+if __name__ == "__main__":
+    asyncio.run(get_all_tools())
